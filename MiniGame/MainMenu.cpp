@@ -24,6 +24,8 @@ HRESULT MainMenu::init()
 	Logo = IMGMANAGER->GetImage("Logo");
 	Option = IMGMANAGER->GetImage("Option");
 	SOUNDMANAGER->play("BGM", 1.0f);
+
+	optionTouch = false;
 	return S_OK;
 }
 
@@ -38,13 +40,18 @@ void MainMenu::update()
 		m_LogoY += 100.0f * g_ETime;
 	}
 	
-	if (KEYMANAGER->isKeyDown(VK_LBUTTON))
+	if (optionTouch == true && KEYMANAGER->isKeyDown(VK_LBUTTON))
 	{
-		//m_Option = true;
+		m_Option = true;
 	}
 	if (PtInCircle(optionCC, g_ptMouse))
 	{
-		//Option->PlayAnimation("PS2", 1, 2);
+		optionTouch = true;
+		//Option->PlayAnimation(ANI_LOOP, 1, 1);
+	}
+	else
+	{
+		optionTouch = false;
 	}
 }
 

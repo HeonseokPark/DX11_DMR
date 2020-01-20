@@ -12,6 +12,7 @@ public:
 	Image* Option;
 	float m_LogoY;
 	FCIRCLE optionCC;
+	bool optionTouch;
 
 
 public:
