@@ -9,7 +9,10 @@ private:
 public:
 	Image* BackGround;	//백그라운드 배경 이미지
 	Image* Logo;		//로고 이미지
-	Image* Option;
+	Image* Option;		//옵션 버튼 이미지
+	Image* storyMode;	//이야기 상태 이미지
+	Image* infiniteMode; //무한 상태 이미지
+
 	float m_LogoY;
 	FCIRCLE optionCC;
 	bool optionTouch;

@@ -23,6 +23,8 @@ HRESULT MainMenu::init()
 	BackGround = IMGMANAGER->GetImage("Main");
 	Logo = IMGMANAGER->GetImage("Logo");
 	Option = IMGMANAGER->GetImage("Option");
+	storyMode = IMGMANAGER->GetImage("storyMode");
+	infiniteMode = IMGMANAGER->GetImage("infinityMode");
 	SOUNDMANAGER->play("BGM", 1.0f);
 
 	optionTouch = false;
@@ -68,6 +70,20 @@ void MainMenu::render()
 		Logo->Position(WINSIZEX / 2.0f, m_LogoY);
 		Logo->Rotate(0.0f, 0.0f, 0.0f);
 		Logo->Render();
+
+		if (m_LogoY >= 450.0f)
+		{
+			storyMode->Scale(263.0f, 58.0f);
+			storyMode->Position(640.0f, m_LogoY - 300.0f);
+			storyMode->Rotate(0.0f, 0.0f, 0.0f);
+			storyMode->Render();
+
+			infiniteMode->Scale(263.0f, 58.0f);
+			infiniteMode->Position(640.0f, m_LogoY - 360.0f);
+			infiniteMode->Rotate(0.0f, 0.0f, 0.0f);
+			infiniteMode->Render();
+		}
+
 	}
 	if (m_Option == false)
 	{

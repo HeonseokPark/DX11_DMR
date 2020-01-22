@@ -36,6 +36,8 @@ HRESULT MainGame::init()
 	IMGMANAGER->AddImage("Main", _T("Main.png"), "PS2");
 	IMGMANAGER->AddImage("Logo", _T("Logo.png"), "PS2");
 	IMGMANAGER->AddImage("Option", _T("SettingsButton.png"), 1, 2, "PS2");
+	IMGMANAGER->AddImage("storyMode", _T("story.png"), "PS2");
+	IMGMANAGER->AddImage("infinityMode", _T("moohan.png"), "PS2");
 
 	IMGMANAGER->AddImage("Cursor", _T("pointer.png"), "PS2");
 
