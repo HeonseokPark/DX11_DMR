@@ -152,9 +152,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="MiniGame\Intro.h" />
-    <ClInclude Include="MiniGame\MainMenu.h" />
-    <ClInclude Include="MiniGame\OptionMenu.h" />
+    <ClInclude Include="InGame\Intro.h" />
+    <ClInclude Include="InGame\MainMenu.h" />
+    <ClInclude Include="InGame\OptionMenu.h" />
     <ClInclude Include="Singleton\SceneManager.h" />
     <ClInclude Include="Singleton\ImageManager.h" />
     <ClInclude Include="Object\Image.h" />
@@ -174,9 +174,9 @@
     <ClInclude Include="Singleton\TimeManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MiniGame\Intro.cpp" />
-    <ClCompile Include="MiniGame\MainMenu.cpp" />
-    <ClCompile Include="MiniGame\OptionMenu.cpp" />
+    <ClCompile Include="InGame\Intro.cpp" />
+    <ClCompile Include="InGame\MainMenu.cpp" />
+    <ClCompile Include="InGame\OptionMenu.cpp" />
     <ClCompile Include="Singleton\SceneManager.cpp" />
     <ClCompile Include="Singleton\ImageManager.cpp" />
     <ClCompile Include="Object\Image.cpp" />

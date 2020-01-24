@@ -49,7 +49,7 @@ void MainMenu::update()
 	if (PtInCircle(optionCC, g_ptMouse))
 	{
 		optionTouch = true;
-		//Option->PlayAnimation(ANI_LOOP, 1, 1);
+		Option->PlayAnimation(ANI_LOOP, 1, 1);
 	}
 	else
 	{

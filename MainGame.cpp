@@ -2,7 +2,7 @@
 #include "MainGame.h"
 //#include "MiniGame/IsoTile.h"
 //#include "MiniGame/TileMap.h"
-#include "MiniGame/MainMenu.h"
+#include "InGame/MainMenu.h"
 
 MainGame::MainGame()
 {

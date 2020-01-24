@@ -18,9 +18,9 @@
     <ClInclude Include="Singleton\ImageManager.h" />
     <ClInclude Include="Singleton\WriteManager.h" />
     <ClInclude Include="Singleton\SceneManager.h" />
-    <ClInclude Include="MiniGame\MainMenu.h" />
-    <ClInclude Include="MiniGame\Intro.h" />
-    <ClInclude Include="MiniGame\OptionMenu.h" />
+    <ClInclude Include="InGame\Intro.h" />
+    <ClInclude Include="InGame\MainMenu.h" />
+    <ClInclude Include="InGame\OptionMenu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinAPI32.cpp" />
@@ -36,9 +36,9 @@
     <ClCompile Include="Singleton\ImageManager.cpp" />
     <ClCompile Include="Singleton\WriteManager.cpp" />
     <ClCompile Include="Singleton\SceneManager.cpp" />
-    <ClCompile Include="MiniGame\MainMenu.cpp" />
-    <ClCompile Include="MiniGame\Intro.cpp" />
-    <ClCompile Include="MiniGame\OptionMenu.cpp" />
+    <ClCompile Include="InGame\Intro.cpp" />
+    <ClCompile Include="InGame\MainMenu.cpp" />
+    <ClCompile Include="InGame\OptionMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Object\Basic.hlsl" />
