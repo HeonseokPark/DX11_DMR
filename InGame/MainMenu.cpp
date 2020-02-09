@@ -21,7 +21,7 @@ HRESULT MainMenu::init()
 
 	//SOUNDMANAGER->addSound
 	BackGround = IMGMANAGER->GetImage("Main");
-	Logo = IMGMANAGER->GetImage("Logo");
+	Logo = IMGMANAGER->GetImage("Logo");	 
 	Option = IMGMANAGER->GetImage("Option");
 	storyMode = IMGMANAGER->GetImage("storyMode");
 	infiniteMode = IMGMANAGER->GetImage("infinityMode");
@@ -91,5 +91,8 @@ void MainMenu::render()
 		Option->Scale(50.0f, 50.0f);
 		Option->Rotate(0.0f, 0.0f, 0.0f);
 		Option->Render();
+		
+		
+		SCENEMANAGER->ChangeScene("OptionMenu");
 	}
 }

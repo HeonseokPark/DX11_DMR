@@ -3,6 +3,8 @@
 //#include "MiniGame/IsoTile.h"
 //#include "MiniGame/TileMap.h"
 #include "InGame/MainMenu.h"
+#include "InGame/OptionMenu.h"
+
 
 MainGame::MainGame()
 {
@@ -53,6 +55,7 @@ HRESULT MainGame::init()
 	//
 	//SCENEMANAGER->ChangeScene("Iso");
 	SCENEMANAGER->ChangeScene("MainMenu");
+	SCENEMANAGER->AddScene("OptionMenu", new OptionMenu);
 
 
 	Cursor = IMGMANAGER->GetImage("Cursor");
